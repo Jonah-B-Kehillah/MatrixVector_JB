@@ -8,7 +8,8 @@ public class MatrixMagic {
 		for(int i = 0; i < a.length; i++) {
 			out += (a[i] * b[i]);
 		}
-		return out;
+		
+		return (double) Math.round(out*1000)/1000;
 	}
 	
 	public static Double[] matrixVectorProduct(Double[][] matrix, Double[] vector) {
